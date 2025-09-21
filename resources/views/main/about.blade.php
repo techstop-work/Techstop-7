@@ -120,7 +120,7 @@
 				<div class="landing-tab clearfix">
 					<ul class="nav nav-tabs nav-stacked col-md-3 col-sm-5">
 					  	<li class="active">
-					  		<a class="animated fadeIn" href="#tab_a" data-toggle="tab" wire:navigate>
+					  		<a class="animated fadeIn" href="#tab_a" data-toggle="tab" >
 					  			<span class="tab-icon"><i class="fa fa-info"></i></span>
 					  			<div class="tab-info">
 						  			<h3>TechStop</h3>
@@ -128,7 +128,7 @@
 					  		</a>
 					  	</li>
 					  	<li>
-						  	<a class="animated fadeIn" href="#tab_b" data-toggle="tab" wire:navigate>
+						  	<a class="animated fadeIn" href="#tab_b" data-toggle="tab" >
 						  		<span class="tab-icon"><i class="fa fa-briefcase"></i></span>
 					  			<div class="tab-info">
 						  			<h3>Innovation</h3>
@@ -136,7 +136,7 @@
 						  	</a>
 						</li>
 					 	<li>
-						  	<a class="animated fadeIn" href="#tab_c" data-toggle="tab" wire:navigate>
+						  	<a class="animated fadeIn" href="#tab_c" data-toggle="tab" >
 						  		<span class="tab-icon"><i class="fa fa-android"></i></span>
 					  			<div class="tab-info">
 						  			<h3>Procedures</h3>
@@ -144,7 +144,7 @@
 						  	</a>
 						</li>
 						<li>
-						  	<a class="animated fadeIn" href="#tab_d" data-toggle="tab" wire:navigate>
+						  	<a class="animated fadeIn" href="#tab_d" data-toggle="tab" >
 						  		<span class="tab-icon"><i class="fa fa-pagelines"></i></span>
 					  			<div class="tab-info">
 						  			<h3>Modern Design</h3>
@@ -152,7 +152,7 @@
 						  	</a>
 						</li>
 						<li>
-						  	<a class="animated fadeIn" href="#tab_e" data-toggle="tab" wire:navigate>
+						  	<a class="animated fadeIn" href="#tab_e" data-toggle="tab" >
 						  		<span class="tab-icon"><i class="fa fa-support"></i></span>
 					  			<div class="tab-info">
 						  			<h3>Dedicated Support</h3>
@@ -229,14 +229,14 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(45deg, rgba(51,79,150,0.1), rgba(74,103,196,0.1));
-	opacity: 0;
+	background: rgba(0, 0, 0, 0.3);
+	opacity: 1;
 	transition: opacity 0.3s ease;
 	z-index: 1;
 }
 
 .animated-image-1:hover::before, .animated-image-2:hover::before {
-	opacity: 1;
+	opacity: 0.5;
 }
 
 .animated-image-2 {

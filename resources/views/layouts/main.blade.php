@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
 
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDZEEB73L2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-GDZEEB73L2');
+    </script>
+
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
 	<title>@yield('title', 'TechStop - Web Development Services')</title>
-	<meta name="description" content="TechStop is a web development company that help businesses in design, development and maintenance of high-speed, stable and secure websites. ">
+	<meta name="description" content="TechStop is a web development company that helps businesses design, develop and maintain high-speed, stable and secure websites. ">
 	<meta name="keywords" content="website development, web design, business websites, custom website solutions, cloud services, seo services, content writing, devops, api integrations, tech, digital solutions ">
 	<meta name="author" content="TechStop">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,6 +39,25 @@
 	<meta name="twitter:description" content="@yield('twitter_description', 'TechStop is a web development company that helps businesses design, develop and maintain high-speed, stable and secure websites.')">
 	<meta name="twitter:image" content="@yield('twitter_image', url('https://d1oktf4gbw23dy.cloudfront.net/techstop-img/web-logo/bluelogo.webp'))">
 	<meta name="twitter:image:alt" content="TechStop - Web Development Company Logo">
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	@php
+	echo json_encode([
+	  "@context" => "https://schema.org",
+	  "@type" => "Organization",
+	  "name" => "TechStop",
+	  "url" => "https://www.techstop.pro",
+	  "logo" => "https://d1oktf4gbw23dy.cloudfront.net/techstop-img/web-logo/bluelogo.webp",
+	  "description" => "TechStop is a web development company that helps businesses design, develop and maintain high-speed, stable and secure websites.",
+	  "contactPoint" => [
+	    "@type" => "ContactPoint",
+	    "contactType" => "customer service",
+	    "email" => "contact@techstop.pro"
+	  ]
+	]);
+	@endphp
+	</script>
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -391,6 +420,14 @@
 }
 .pulse-cogs {
 	animation: pulseCogs 2s ease-in-out infinite;
+}
+
+/* Mobile hamburger menu height */
+@media (max-width: 767px) {
+	.navbar-collapse.in {
+		max-height: 400px;
+		overflow-y: auto;
+	}
 }
 
 </style>
